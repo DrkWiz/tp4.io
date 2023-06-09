@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="est.css" />
+    <script src="escrip.js"></script>
+</head>
+
+<body class="bodyback">
+
+    <header>
+        <img class="logo" src="imagenes/logo.png" width="100px" alt="Logo" />
+        <h1 id="texto"><ins>INICIO</ins></h1>
+        <nav id="navigate">
+            <ul>
+                <li><a href="index.html" id="textoREF">INICIO</a></li>
+                <li><a href="#redes" id="textoREF">REDES</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <span id="formulario">
+    <h1>Formulario de alquiler de autos</h1>
+
+    <form id="texto">
+        <label for="nombre">Nombre Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
+        <br>
+
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni" name="dni" required>
+        <br>
+
+            <label for="marca">Marca:</label>
+            <br>
+            <input type="radio" id="audi" name="marca" value="audi" required onclick="cargarModelos()">
+            <label for="audi">Audi</label>
+            <br>
+            <input type="radio" id="mercedes" name="marca" value="mercedes" required onclick="cargarModelos()">
+            <label for="mercedes">Mercedes</label>
+            <br>
+            <input type="radio" id="porsche" name="marca" value="porsche" required onclick="cargarModelos()">
+            <label for="porsche">Porsche</label>
+        <br>
+
+            <label for="modelo">Modelo:</label>
+            <select id="modelo" name="modelo" required>
+                <option value="" disabled selected>Selecciona un modelo</option>
+            </select>
+            <br>
+
+            <label for="dias">Cantidad de días:</label>
+            <input type="number" id="dias" name="dias" min="1" required>
+            <br>
+
+        <button type="button" onclick="llamada()">Calcular</button>
+        <button type="button" onclick="borrarDatos()">Borrar</button>
+    </form>
+
+    <p id="costo"></p>
+</span>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section id="redes">
+    <h2>Redes</h2>
+
+    <div class="redes-container">
+        <div class="red-social">
+            <img src="imagenes/facebook-6062236_1280.png" alt="Facebook Logo">
+            <span>Facebook</span>
+        </div>
+
+        <div class="red-social">
+            <img src="imagenes/twitter.png" alt="Twitter Logo">
+            <span>Twitter</span>
+        </div>
+
+        <div class="red-social">
+            <img src="imagenes/instagram-6062238_1280.png" alt="Instagram Logo">
+            <span>Instagram</span>
+        </div>
+    </div>
+
+</section>
+</body>
+
+</html>
